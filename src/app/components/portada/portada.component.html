@@ -1,0 +1,10 @@
+<div class="topics">
+    <div class="tema" *ngFor="let topic of topicArray" (click) = "onTemaClick(topic.id)" >
+        <img [src]="'./assets/'  + topic.icon" alt="{{topic.name }} icon">
+        <h4> {{topic.name }} </h4>
+        <p> {{ topic.points }} puntos</p>
+
+    </div>
+   
+
+</div>

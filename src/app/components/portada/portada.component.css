@@ -1,0 +1,22 @@
+.tema {
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-items: centers;
+    align-items: center;
+    margin: 1.5em 0.7em 1em 0.7em;
+    padding: 1em 0.5em;
+    border: 1px solid rgb(247, 242, 242);
+    border-radius: 10px;
+}
+
+.tema h4 {
+    margin: 0em 1em 0em 1em;
+    color:antiquewhite;
+    font-size: 1.3em;
+}
+
+img {
+    max-width: 40%;
+    height: auto;
+}

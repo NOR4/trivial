@@ -1,0 +1,22 @@
+<div class="title">
+    <h1> {{ currentTema?.name }} </h1>
+    <span> {{ contador }} </span>
+</div>
+<div class="question-container">
+    <h2>{{ preguntas[preguntaActualIndex].question }}</h2>
+    <div class="question"
+        *ngFor="let opcion of preguntas[preguntaActualIndex].options"
+        (click)="responder(opcion)"
+        [class.correct]="isAnswered && opcion === preguntas[preguntaActualIndex].correct"
+    [class.incorrect]="isAnswered && selectedOption === opcion && opcion !== preguntas[preguntaActualIndex].correct"
+    [class.disabled]="isAnswered && selectedOption !== opcion">
+
+        {{ opcion }}
+    </div>
+  </div>
+<div class="hints-container">
+    <button [routerLink]="['/portada']"> VOLVER </button>
+    <button> Hint 2 </button>
+    <button> Hint 2 </button>
+    
+</div>

@@ -1,0 +1,30 @@
+.grid {
+    display: grid;
+    grid-template-columns: 17% 8% 17% 8% 17% 8% 17% 8%;
+    justify-content: center;
+    align-items: center;
+    border-radius: 3px;
+    background-color: #000000b3;
+    padding: 3%;
+    box-shadow: 10px 11px 7px -1px rgba(0,0,0,0.9);
+}
+
+.grid-item--points {
+   color: white;
+   font-size: 2.5em;
+   margin-left: 0;
+
+}
+
+.grid-item--logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+
+}
+
+.grid-item--logo img {
+    max-width: 60%;
+    height: auto;
+}
